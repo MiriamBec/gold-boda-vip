@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&display=swap');
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  margin-top: 30px;
+  /* margin-bottom: 50px;  */
+}
+
+/* Estilo de cada caja */
+.countdown-box {
+  background: #ffffffa5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilo para los números */
+.countdown-number {
+  font-size: 1.8em;
+  color: var(--second-color);
+  margin: 0;
+  font-family: "DM Sans", sans-serif ;
+
+}
+
+/* Estilo para las etiquetas de tiempo */
+.countdown-label {
+  font-size: 0.5em;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "DM Sans", sans-serif ;
+
+}
+
+.double-point {
+  font-size: 3rem;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+  /* Estilo de cada caja */
+.countdown-box {
+  padding: 15px;
+}
+
+  /* Estilo para los números */
+.countdown-number {
+  font-size: 2.1em;
+}
+
+/* Estilo para las etiquetas de tiempo */
+.countdown-label {
+  font-size: 0.8em;
+}
+
+.double-point {
+  font-size: 3.3rem;
+}
+}
+
+/* Responsive PC */
+@media screen and (min-width: 1025px) {
+  /* Estilo de cada caja */
+.countdown-box {
+  padding: 20px;
+}
+
+  /* Estilo para los números */
+.countdown-number {
+  font-size: 2.4em;
+}
+
+/* Estilo para las etiquetas de tiempo */
+.countdown-label {
+  font-size: 0.8rem;
+}
+
+.double-point {
+  font-size: 3.6rem;
+}
+}

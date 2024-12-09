@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Tangerine:wght@400;700&family=Fleur+De+Leah&display=swap');
+
+:root {
+  --first-color: #59653C;
+  --second-color: #A87B05;
+  --first-font: "Tangerine", cursive;
+  /* --second-font: "Caveat", cursive; */
+  --second-font: "Dancing Script", serif;
+  --thirtd-font: "DM Sans", sans-serif;
+  --shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* bases */
+
+h2 {
+  color: var(--first-color);
+  font-family: var(--first-font);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 10px 0;
+  text-shadow: var(--shadow);
+}
+
+h3 {
+  color: var(--first-color);
+  font-family: var(--second-font);
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: var(--shadow);
+  /* width: 280px; */
+  /* text-align: center; */
+}
+
+.white_h3 {
+  color: white;
+}
+
+p{
+  font-family: var(--thirtd-font);
+  font-size: 1rem;
+  /* text-align: center; */
+  font-weight: 300;
+}
+
+.important-p {
+  font-family: var(--second-font);
+  color: var(--first-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+
+/* imagenes and icons */
+.icons{
+  width: 70px;
+  height: 70px;
+}
+
+.decor-img {
+  width: 300px;
+  /* margin: 15px 0; */
+}
+
+.decor-2-4 {
+  margin: 30px 0;
+}
+
+.decor-3 {
+  margin: 20px 0;
+}
+
+/* button */
+
+.button {
+  font-family: var(--thirtd-font);
+  padding: 5px 20px;
+  border: 2px solid var(--first-color);
+  color: white;
+  background-color: var(--first-color);
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+  font-weight: 300;  /* Transición suave */
+}
+
+.button:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Containers */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 50px 35px 70px 35px;
+
+}
+
+.first-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.second-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #FFFFFD;
+  padding: 0 35px;
+}
+
+.second-container div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-container-content {
+  max-width: 280px;
+  gap: 20px;
+}
+
+/*portada */
+.front-page {
+  background-image: url(photos/1.jpg);
+  height: 100vh;
+  width: 100%;
+}
+
+.front-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* max-width: 300px;
+  padding: 30px; */
+  /* margin: 40px; */
+}
+
+.decor-img-corazon {
+  width: 200px;
+  margin: 15px 0;
+}
+
+.evento {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.p-event{
+  text-shadow: var(--shadow);
+  font-size: 1.6rem;
+  /* font-family: "Fleur De Leah", cursive; */
+}
+
+.nombre-novios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nombre-novios_h2 {
+  color: white;
+}
+
+.h2-and {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* margin: -5px 0; */
+}
+
+.linea {
+  width: 90px;
+  height: 5px;
+}
+
+.date_front-page {
+  margin: 40px 0;
+  text-shadow: var(--shadow);
+  font-size: 1.4rem;
+}
+
+/* Parte de la introducción */
+/* .introduction {
+  gap: 20px;
+  background-color: aqua;
+}  */
+
+.div-padres {
+  margin: 20px 0;
+}
+
+.p-padres {
+  color: var(--second-color);
+}
+
+/* CoundDown */
+
+.countdown_div{
+  background-image: url(photos/2.jpg);
+}
+/* Información de los eventos */
+
+.div_event-information {
+  margin: 10px 0;
+}
+
+.div_event-information_m {
+  margin-bottom: 40px;
+}
+
+.month {
+  margin-bottom: -10px;
+}
+
+.date {
+  font-size: 1.7rem;
+}
+
+.decor-img-f {
+  width: 230px;
+  margin: 10px 0;
+}
+
+.event-name{
+  font-family: var(--thirtd-font);
+  color: var(--second-color);
+  text-transform: uppercase;
+  text-shadow: var(--shadow);
+  margin-bottom: 10px;
+}
+
+.img-lugar {
+  width: 250px;
+}
+
+.event-location{
+  margin: 15px 0;
+  font-weight: 500;
+  color: var(--second-color);
+}
+
+.event-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  margin-top: 10px;
+
+}
+
+/* Confirmación de asistencia */
+.confirmation {
+  background-image: url(photos/3.jpg);
+}
+
+.div-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.confirmarion-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmarion-div img {
+  margin-bottom: 10px;
+}
+
+.div-button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.button-confirmation {
+  font-size: 1.1rem;
+  padding: 7px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Mesa de regalos */
+.second-container-content{
+  gap: 20px;
+}
+
+.div-p-bottom {
+  border-bottom: 2px solid var(--second-color);
+  padding: 10px 0 20px 0;
+  width: 260px;
+}
+
+/* Opciones de hospedaje */
+.hospedaje {
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.none {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+
+.p-bold {
+  font-weight: 500;
+}
+
+.tiempo {
+  color: var(--first-color);
+  font-weight: 500;
+}
+
+.button-hospedaje {
+  display: flex;
+  flex-direction: initial !important;
+  gap: 10px;
+}
+
+
+/* Hashtag */
+.div-hashtag h3{
+  margin-top: 20px;
+}
+
+/* Despedida */
+.despedida {
+  background-image: url(photos/12.jpg);
+}
+
+.div-despedida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.div-despedida h2 {
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color:var(--first-color);
+  color: white;
+}
+
+footer p {
+  font-size: 0.6rem;
+}
+
+/* Animación */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px); /* Empieza 20px hacia abajo */
+  transition: opacity 0.6s ease, transform 0.9s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0); /* Se mueve a su posición original */
+}
+
+
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+
+  /* bases */
+  h2 {
+    font-size: 2.7rem;
+  }
+  
+  h3 {
+    font-size: 2.3rem;
+      /* width: 430px; */
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+  
+  .important-p {
+    font-size: 1.8rem;
+  }
+
+  /* imagenes and icons */
+
+  .icons{
+    width: 90px;
+    height: 90px;
+    /* margin-bottom: 5px; */
+  }
+
+.decor-img {
+  width: 450px;
+}
+
+.decor-img-corazon {
+  width: 350px;
+}
+
+/* buttons */
+.button {
+  font-size: 1.3rem;
+}
+
+/* Containers */
+
+.first-container_p-inferior {
+  font-size: 1.6rem;
+}
+
+.countdown_div {
+  background-position: calc(50%) calc(0% - -40%);
+}
+
+.confirmation {
+  background-position: calc(50%) calc(0% - -35%);
+}
+
+.despedida {
+  background-position: calc(50%) calc(0% - -30%);
+}
+
+.front-page-container p, .div-confirmation p, .div-despedida p {
+  max-width: 430px;
+}
+
+.second-container-content {
+  max-width: 430px;
+}
+
+/* portada */
+.p-event{
+  font-size: 1.7rem;
+}
+
+.linea {
+  width: 110px;
+  height: 5px;
+}
+
+/* parte introducción */
+
+.decor-img-f {
+  width: 300px;
+  margin: 10px 0;
+}
+
+.date {
+  font-size: 2rem;
+}
+
+.img-lugar {
+  width: 350px;
+}
+
+/* mesa regalos */
+.div-p-bottom {
+  width: 410px;
+}
+
+/* Footer */
+footer p {
+  font-size: 1rem;
+}
+
+}
+
+
+/* Resposive PC */
+@media screen and (min-width: 1025px){
+   /* bases */
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+p{
+  font-size: 1.5rem;
+}
+
+.important-p {
+  font-size: 2.1rem;
+}
+
+/* imagenes and icons */
+
+.icons{
+  width: 110px;
+  height: 110px;
+  /* margin-bottom: 5px; */
+}
+
+.decor-img {
+  width: 600px;
+}
+
+.decor-img-corazon {
+  width: 500px;
+}
+
+/* buttons */
+.button {
+  font-size: 1.6rem;
+}
+
+/* Contaienrs */
+.first-container_p-inferior {
+  font-size: 1.9rem;
+}
+
+.countdown_div {
+  background-position: calc(50%) calc(0% - -33%);
+}
+
+.confirmation {
+  background-position: calc(50%) calc(0% - -28%);
+}
+
+.despedida {
+  background-position: calc(50%) calc(0% - -25%);
+}
+
+
+.front-page-container p, .div-confirmation p, .div-despedida p {
+  max-width: 580px;
+}
+
+/* mesa regalos */
+.div-p-bottom {
+  width: 560px;
+}
+
+.second-container-content {
+  max-width: 580px;
+}
+
+/* portada */
+.p-event{
+  font-size: 2rem;
+}
+
+.linea {
+  width: 130px;
+  height: 7px;
+}
+
+
+/* parte introducción */
+.decor-img-f {
+  width: 450px;
+  margin: 10px 0;
+}
+
+.date {
+  font-size: 2.3rem;
+}
+
+.img-lugar {
+  width: 500px;
+}
+
+/* Despedida */
+.div-despedida {
+  padding: 75px;
+}
+/* Footer */
+footer p {
+  font-size: 1.1rem;
+}
+
+}
+
+
+
+

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <meta
+      property="og:title"
+      content="Nuestra Boda Sofía Vargas y Lucas Mendoza"
+    />
+    <!-- Descripción que aparecerá en la vista previa -->
+    <meta
+      property="og:description"
+      content="Es un honor para mí invitarte a nuestra boda."
+    />
+    <!-- URL de la imagen para la vista previa -->
+    <meta
+      property="og:image"
+      content="https://drive.google.com/file/d/1Jod33mzJUlrvzHSoIdjumJBoG6EIRPyd/view?usp=sharing"
+    />
+    <!-- URL de la página web -->
+    <meta property="og:url" content="https://tu-sitio.com" />
+
+    <title>Nuestra Boda Sofía Vargas y Lucas Mendoza</title>
+    <link rel="icon" href="icons/favicon-boda.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/audioPlayer.css" />
+    <link rel="stylesheet" href="css/countdown.css" />
+    <link rel="stylesheet" href="css/itinerary.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <!-- 1. Portada? -->
+    <div class="first-container front-page">
+      <div class="front-page-container overlay">
+        <div class="evento">
+          <p class="p-event fade-up">Nuestra Boda</p>
+        </div>
+
+        <!-- Contenido inferior -->
+        <div>
+          <!-- Novios names-->
+          <div class="nombre-novios">
+            <h2 class="fade-up nombre-novios_h2">Sofía Vargas Rodríguez</h2>
+            <h2 class="fade-up h2-and">
+              <img src="icons/linea.svg" alt="decor" class="linea" />&
+              <img src="icons/linea.svg" alt="decor" class="linea" />
+            </h2>
+            <h2 class="fade-up nombre-novios_h2">Lucas Mendoza Cortés</h2>
+          </div>
+
+          <p class="date_front-page fade-up">08 de Febrero de 2025</p>
+
+          <!-- Reproductor de musica -->
+          <div class="audio-player fade-up">
+            <button id="play-pause">
+              <img id="icon" src="icons/play.png" alt="Play Icon" />
+            </button>
+            <audio id="audio" src="music/Anywhen-You-Say-Cheel.mp3"></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Introductión -->
+    <div class="second-container introduction">
+      <img
+        src="icons/decor2.svg"
+        alt="decoración"
+        class="decor-img decor-2-4"
+      />
+      <div class="second-container-content">
+        <h3 class="important-p fade-up">
+          Con la bendición de Dios y en compañía de nuestros padres
+        </h3>
+        <div class="div-padres">
+          <p class="fade-up">Valeria Rodríguez Ramírez</p>
+          <p class="fade-up">Emilio Vargas Hernández</p>
+          <p class="p-padres fade-up">Padres de la Novia</p>
+        </div>
+        <div class="div-padres">
+          <p class="fade-up">Adriana Cortés Fernández</p>
+          <p class="fade-up">Sebastián Mendoza Márquez</p>
+          <p class="p-padres fade-up">Padres del Novio</p>
+        </div>
+        <p class="fade-up">Dios juntó nuestras manos y nos señaló el camino.</p>
+        <p class="fade-up">
+          Nosotros uniremos nuestras vidas y lo recorreremos con amor y fe.
+        </p>
+      </div>
+      <img src="icons/decor3.svg" alt="decoración" class="decor-img decor-3" />
+      <!-- Padrinos y madrinas -->
+      <h3 class="important-p fade-up">Padrinos de Honor</h3>
+      <div class="div-padres">
+        <p class="fade-up">Isabela Montesinos Rivera</p>
+        <p class="p-padres fade-up">Madrina de honor de la Novia</p>
+      </div>
+      <div class="div-padres">
+        <p class="fade-up">Santiago Beltrán Alarcón</p>
+        <p class="p-padres fade-up">Padrino de honor del Novio</p>
+      </div>
+      <img
+        src="icons/decor4.svg"
+        alt="decoración"
+        class="decor-img decor-2-4"
+      />
+    </div>
+    <!-- Confirmacíon de asistencia -->
+    <div class="first-container countdown_div">
+      <div class="div-confirmation overlay">
+        <h3 class="fade-up white_h3">Tan Solo Faltán</h3>
+
+        <!-- contador -->
+        <div class="countdown-container">
+          <div class="countdown-box">
+            <p class="countdown-number" id="days">00</p>
+            <p class="countdown-label">Días</p>
+          </div>
+          <p class="double-point">:</p>
+          <div class="countdown-box">
+            <p class="countdown-number" id="hours">00</p>
+            <p class="countdown-label">Horas</p>
+          </div>
+          <p class="double-point">:</p>
+          <div class="countdown-box">
+            <p class="countdown-number" id="minutes">00</p>
+            <p class="countdown-label">Minutos</p>
+          </div>
+          <p class="double-point">:</p>
+          <div class="countdown-box">
+            <p class="countdown-number" id="seconds">00</p>
+            <p class="countdown-label">Segundos</p>
+          </div>
+        </div>
+        <h3 class="fade-up white_h3">Para Este Día Tan Especial</h3>
+      </div>
+    </div>
+
+    <!-- Container en espera -->
+    <div class="second-container">
+      <img
+        src="icons/decor2.svg"
+        alt="decoración"
+        class="decor-img decor-2-4"
+      />
+      <!-- Información del evento -->
+      <div class="second-container-content">
+        <h3 class="fade-up">¡Nos casamos!</h3>
+        <div class="div_event-information">
+          <p class="fade-up month">Febrero</p>
+          <img src="icons/fecha1.svg" alt="decor" class="decor-img-f" />
+          <h3 class="date fade-up">Sábado 08 2025</h3>
+          <img src="icons/fecha2.svg" alt="decor" class="decor-img-f" />
+        </div>
+
+        <!-- Ceremonia-->
+        <div class="div_event-information div_event-information_m">
+          <p class="event-name fade-up">CEREMONIA</p>
+          <img
+            src="photos/parroquia.jpg"
+            alt="lugar recepción"
+            class="img-lugar"
+          />
+          <p class="event-location fade-up">Parroquia Guadalupe</p>
+          <p class="fade-up">
+            Joaquin Garcia Icazbalceta 96, San Rafael, Cuauhtémoc, 06470 Ciudad
+            de México, CDMX, México
+          </p>
+          <p class="event-time fade-up">4:00PM</p>
+          <a
+            class="button fade-up"
+            href="https://maps.app.goo.gl/qJEyuFhDEGyUdKus5"
+            target="_blank"
+            >Ir al mapa</a
+          >
+        </div>
+
+        <!-- Recepción -->
+        <div class="div_event-information">
+          <p class="event-name fade-up">Recepción</p>
+          <img src="photos/lugar.png" alt="lugar recepción" class="img-lugar" />
+          <p class="event-location fade-up">Biza Centro de Eventos</p>
+          <p class="fade-up">
+            Nuevo León 220, Centro, Urb. No. 5, 85000 Cdad. Obregón, Son.,
+            México
+          </p>
+          <p class="event-time fade-up">7:00PM</p>
+          <a
+            class="button fade-up"
+            href="https://maps.app.goo.gl/qJEyuFhDEGyUdKus5"
+            target="_blank"
+            >Ir al mapa</a
+          >
+
+          <!-- Código de vestimenta -->
+          <img
+            src="icons/decor3.svg"
+            alt="decoración"
+            class="decor-img decor-3"
+          />
+          <h3 class="important-p fade-up">Código de Vestimenta</h3>
+          <p class="event-time fade-up">Formal</p>
+          <div class="div_event-information">
+            <img
+              src="icons/dressCode.svg"
+              alt="vestimenta icon"
+              class="icons fade-up"
+            />
+            <p class="fade-up">Color blanco reservado para la Novia</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="icons/decor4.svg"
+        alt="decoración"
+        class="decor-img decor-2-4"
+      />
+    </div>
+
+    <!-- Itinerario -->
+    <div class="itinerary">
+      <h3 class="itinerary-h3 fade-up">Itinerario</h3>
+      <div class="itinerary-container">
+        <div class="timeline-container">
+          <div class="timeline-line">
+            <div class="fill" id="timeline-fill"></div>
+          </div>
+
+          <div class="event">
+            <div class="event-content">
+              <h5>Recepción</h5>
+              <p>6:00 PM</p>
+            </div>
+            <div class="event-icon">
+              <img
+                src="icons/recepcion.png"
+                alt="ceremonia icono"
+                class="itinerary-icon"
+              />
+            </div>
+          </div>
+
+          <div class="event-right">
+            <div class="event-icon">
+              <img
+                src="icons/ceremonia.png"
+                alt=" recepcion icono"
+                class="itinerary-icon"
+              />
+            </div>
+            <div class="event-content-right">
+              <h5>Misa</h5>
+              <p>8:00 PM</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="event-content">
+              <h5>Cena</h5>
+              <p>9:00 PM</p>
+            </div>
+            <div class="event-icon">
+              <img
+                src="icons/cena.png"
+                alt="brindis icono"
+                class="itinerary-icon"
+              />
+            </div>
+          </div>
+
+          <div class="event-right">
+            <div class="event-icon">
+              <img
+                src="icons/brindis.png"
+                alt="cena icono"
+                class="itinerary-icon"
+              />
+            </div>
+            <div class="event-content-right">
+              <h5>Brindis</h5>
+              <p>9:30 PM</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="event-content">
+              <h5>Tornafiesta</h5>
+              <p>1:00 AM</p>
+            </div>
+            <div class="event-icon">
+              <img
+                src="icons/tornafiesta.png"
+                alt="corazon icono"
+                class="itinerary-icon"
+              />
+            </div>
+          </div>
+
+          <div class="event-right">
+            <div class="event-icon">
+              <img
+                src="icons/fin.png"
+                alt="tornafiesta icono"
+                class="itinerary-icon"
+              />
+            </div>
+            <div class="event-content-right">
+              <h5>Fin</h5>
+              <p>2:00 AM</p>
+            </div>
+          </div>
+
+          <!-- Más eventos aquí -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirmacíon de asistencia -->
+    <div class="first-container confirmation">
+      <div class="div-confirmation overlay">
+        <h3 class="fade-up white_h3">Confirma Tu Asistencia</h3>
+        <p class="fade-up">
+          ¡Queremos compartir este momento tan esperado contigo! Por favor
+          ayudanos confirmando tu asistencia.
+        </p>
+        <div class="confirmarion-div">
+          <img
+            src="icons/whatsapp.svg"
+            alt="icono whatsApp"
+            class="icons fade-up"
+          />
+          <div-button>
+            <a
+              class="button button-confirmation fade-up"
+              href="https://www.whatsapp.com/"
+              target="_blank"
+              >Confirmar a Sofía</a
+            >
+            <a
+              class="button button-confirmation fade-up"
+              href="https://www.whatsapp.com/"
+              target="_blank"
+              >Confirmar a Lucas</a
+            >
+          </div-button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Opciones de regalo -->
+    <div class="second-container gift-table hashtag">
+      <img
+        src="icons/decor2.svg"
+        alt="decoración"
+        class="decor-img decor-2-4"
+      />
+      <div class="second-container-content">
+        <h3 class="fade-up">Mesa de Regalos</h3>
+        <p class="fade-up">¡Gracias por formar parte de este día!</p>
+        <div class="regalos">
+          <!-- segunda lista -->
+          <div class="div-p-bottom">
+            <img
+              src="icons/sobre.svg"
+              alt="sobre icono"
+              class="icons fade-up"
+            />
+            <p class="p-bold fade-up">¡La lluvia de sobres!</p>
+          </div>
+        </div>
+        <div class="div-p-bottom">
+          <img
+            src="icons/listaRegalos.svg"
+            alt="lista de regalos icono"
+            class="icons fade-up"
+          />
+          <p class="p-bold fade-up">Liverpool</p>
+          <p class="fade-up">No. 10231</p>
+          <a
+            class="button fade-up"
+            href="https://mesaderegalos.liverpool.com.mx/eventodebusqueda"
+            target="_blank"
+            >Ir a mesa</a
+          >
+        </div>
+        <div class="regalos">
+          <img
+            src="icons/listaRegalos.svg"
+            alt="lista de regalos icono"
+            class="icons fade-up"
+          />
+          <p class="p-bold fade-up">Amazon</p>
+          <a
+            class="button fade-up"
+            href="https://www.amazon.com.mx/"
+            target="_blank"
+            >Ir a mesa</a
+          >
+        </div>
+        <!-- Opciones de hospedaje  -->
+        <img
+          src="icons/decor3.svg"
+          alt="decoración"
+          class="decor-img decor-3"
+        />
+        <h3 class="fade-up">Opciones de Hospedaje</h3>
+        <p class="fade-up">
+          Si estás buscando un lugar para hospedarte, te presentamos algunas de
+          las mejores opciones para que disfrutes al máximo tu estancia
+        </p>
+        <div class="hospedaje div-p-bottom">
+          <p class="event-name fade-up">Sofitel Mexico City Reforma</p>
+          <img
+            src="photos/sofitel-hotel.jpg"
+            alt="lugar recepción"
+            class="img-lugar"
+          />
+          <p class="tiempo fade-up">A solo 15 min.</p>
+          <p class="fade-up">
+            297 Avenue, Av. P.º de la Reforma, Cuauhtémoc, 06500 Ciudad de
+            México.
+          </p>
+          <p class="fade-up">Código de reservación: <strong>89765</strong></p>
+          <div class="button-hospedaje fade-up">
+            <a
+              class="button"
+              href="https://maps.app.goo.gl/XKjEtbGfmwButvNv6"
+              target="_blank"
+              >Ir al mapa</a
+            >
+            <a
+              class="button"
+              href="https://www.sofitel-mexico-city.com/"
+              target="_blank"
+              >Reservar</a
+            >
+          </div>
+        </div>
+        <div class="hospedaje">
+          <p class="event-name fade-up">Zócalo Central</p>
+
+          <img
+            src="photos/central-hotel.png"
+            alt="lugar recepción"
+            class="img-lugar"
+          />
+          <p class="tiempo fade-up">A solo 15 min.</p>
+          <p class="fade-up">
+            Av. 5 de Mayo 61 Cuauhtémoc, Centro Histórico de la Cdad. de México.
+          </p>
+          <p class="fade-up">Código de reservación: <strong>90875</strong></p>
+          <div class="button-hospedaje fade-up">
+            <a
+              class="button"
+              href="https://maps.app.goo.gl/XM7UoQdu48VHrcct6"
+              target="_blank"
+              >Ir al mapa</a
+            >
+            <a
+              class="button"
+              href="https://www.centralhoteles.com/hotels/zocalo-central/"
+              target="_blank"
+              >Reservar</a
+            >
+          </div>
+        </div>
+      </div>
+      <img
+        src="icons/decor4.svg"
+        alt="decoración"
+        class="decor-img decor-2-4"
+      />
+    </div>
+
+    <!-- Galería de fotos  -->
+
+    <div class="gallery">
+      <h3 style="margin-top: -20px" class="fade-up">Galería</h3>
+      <p class="fade-up">¡Mi sesión de fotos!</p>
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <img src="photos/8.jpg" alt="foto 8" />
+          <img src="photos/1.jpg" alt="foto 1" />
+          <img src="photos/2.jpg" alt="foto 2" />
+          <img src="photos/3.jpg" alt="foto 3" />
+          <img src="photos/4.jpg" alt="foto 4" />
+          <img src="photos/5.jpg" alt="foto 5" />
+          <img src="photos/6.jpg" alt="foto 6" />
+          <img src="photos/7.jpg" alt="foto 7" />
+          <img src="photos/8.jpg" alt="foto 8" />
+        </div>
+        <button class="slider-button left" id="prevBtn">&#10094;</button>
+        <button class="slider-button right" id="nextBtn">&#10095;</button>
+      </div>
+
+      <div class="slider-indicators" id="indicators"></div>
+
+      <div class="modal" id="modal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="modalImage" src="" alt="Foto Ampliada" />
+        <span class="modal-nav left" id="modalPrev">&#10094;</span>
+        <span class="modal-nav right" id="modalNext">&#10095;</span>
+      </div>
+    </div>
+
+    <!-- Hashtag -->
+    <div class="second-container gift-table hashtag">
+      <img
+        src="icons/decor2.svg"
+        alt="decoración"
+        class="decor-img decor-2-4"
+      />
+      <div class="second-container-content">
+        <div class="div-hashtag">
+          <img src="icons/fotos.svg" alt="camera icon" class="icons fade-up" />
+          <p class="fade-up">
+            ¡Toma muchas fotos! Y no olvides usar el Hashtag
+          </p>
+          <h3 class="fade-up">#nuestraBoda</h3>
+        </div>
+      </div>
+      <img
+        src="icons/decor4.svg"
+        alt="decoración"
+        class="decor-img decor-2-4"
+      />
+    </div>
+
+    <!-- Despedida -->
+    <div class="first-container despedida">
+      <div class="div-despedida overlay">
+        <p class="fade-up">
+          Nos casamos y queremos que seas parte de este día tan especial.
+          Acompañanos en nuestra celebración de amor.
+        </p>
+        <h2 class="fade-up">Sofía y Lucas</h2>
+        <p class="fade-up">¡Te esperamos!</p>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; <span id="year"></span> By Sweetvites for Sofía and Lucas</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>
